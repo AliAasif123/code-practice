@@ -1,6 +1,7 @@
 package com.code.operation.searching;
 
-public class IndexOfFirstOccurence {
+public class LastOccurenceOfAnArray {
+
 	public static void main(String[] args) {
 
 		int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 };
@@ -20,7 +21,7 @@ public class IndexOfFirstOccurence {
 			} else if (array[mid] > target) {
 				start = mid - 1;
 			} else {
-				if (mid == 0 || array[mid -1] != array[mid]) {
+				if (mid == 0 || array[mid +1] != array[mid]) {
 					return mid;
 				} else {
 					end = mid - 1;
