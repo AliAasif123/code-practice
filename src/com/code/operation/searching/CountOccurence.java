@@ -6,8 +6,8 @@ public class CountOccurence {
 		int start = 0;
 		int end = array.length - 1;
 		int target = 20;
-		int firstOccurence = firstOccurence(array, start, end, target);
-		int lastOccurence = lastOccurence(array, start, end, target);
+		 firstOccurence(array, start, end, target);
+		lastOccurence(array, start, end, target);
 		int countOfAnArray = getCountOfAnArray(array, firstOccurence(array, start, end, target),
 				lastOccurence(array, start, end, target));
 		System.out.println(countOfAnArray);
